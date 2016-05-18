@@ -1,6 +1,8 @@
-# kottans-js-2016
-Repo for home tasks 
+# kottans-js-2016 (Repository for home tasks)
 
-## Week_1
-## Week_2
-## Week_3
+### Week 1
+Task - 
+### Week 2
+Task - 
+### Week 3
+Task - 
