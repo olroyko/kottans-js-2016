@@ -19,3 +19,5 @@ Markup languages)
 - http://tomasjanecek.cz/en/clanky/post/list-of-bootstrap-3-css-classes-with-description (List of Bootstrap 3 CSS classes with description)
 - http://kangax.github.io/compat-table/es6/ (Сompatibility table)
 - https://codepen.io/brissmyr/pen/egidw (Нарисовать крестик на странице)
+- клевый юикс для ввода карта подразумевает маскд инпут (чтобы вводилось по группам в 4 символа) + валидацию + определение карты. Use progressive enhancement, и начни с малого - просто ввода. Но это такая частая задача, что уже полно таких форм + некоторые жс-сдк/ембеддед формы платежек это делают за тебя (первый пример из гугла - http://jessepollak.github.io/card/)
+- 
