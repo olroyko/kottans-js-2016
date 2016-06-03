@@ -1,8 +1,8 @@
 # kottans-js-2016 (Repository for home tasks)
 
 ### Week01
-Task - mark up semantic html page
+HTML
 ### Week02
-Task - mark up the form or postHTML plugin
+CSS
 ### Week03
-Task - 
+JS 
