@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout form</title>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="semantic_ui/semantic.min.css" />-->
+    <link rel="stylesheet" href="styles/style.css" />
+
+</head>
+<body>
+    <!--NAVIGATION SECTION-->
+    <header class="nav-buttons">
+        <a class="go-back btn" role=button href="">go back</a>
+        <a href="">
+            <img class="logo" src="images/icons/header_logo.jpg" alt="company logo" >
+        </a>
+        <a class="sign-in btn" role=button href="">sign in</a>
+    </header>
+
+    <!--FORM SECTION-->
+    <main>
+        <form>
+
+            <!--Order details section-->
+            <section class="order">
+                <div class="table-wrapper">
+                    <h1>your order</h1>
+                    <table class="order-details">
+                        <thead>
+                        <tr><th>items</th>
+                            <th>details</th>
+                            <th>price</th>
+                            <th>delivery</th>
+                        </tr></thead>
+                        <tbody>
+                        <tr>
+                            <td>2 documents</td>
+                            <td>2 languages</td>
+                            <td><data value="USD:696.06">$ 696.06</data></td>
+                            <td>48 hours*</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <fieldset class="order-buttons">
+                        <button class="place-order">place order</button>
+                        <button class="print a quote">print a quote</button>
+                    </fieldset>
+                </div>
+            </section>
+
+            <!--Help section-->
+            <section class="help">
+                <h1>Help center</h1>
+                <p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email</p>
+                <address>
+                    <ul>
+                        <li><a href="tel:+971(0)555555">+971(0)555&nbsp;555</a></li>
+                        <li><a href="mailto:help@qtest.com">help@qtest.com</a></li>
+                    </ul>
+                </address>
+            </section>
+            <hr>
+
+            <!--Translate target section-->
+            <section class="translate-target">
+                <h1>Select what you want to translate</h1>
+                <hr>
+                <div class="translate_block">
+                    <input id="website" type="radio" name="what_transl" value="website" />
+                    <label class="translate website" for="website"><img src="images/icons/website.png" alt="website logo"></label>
+                    <input checked id="documents" type="radio" name="what_transl" value="documents"/>
+                    <label class="translate documents" for="documents"><img src="images/icons/documents.png" alt="documents logo"></label>
+                    <input id="social" type="radio" name="what_transl" value="social"/>
+                    <label class="translate social" for="social"><img src="images/icons/social.png" alt="social icon logo"></label>
+                </div>
+            </section>
+
+            <!--Upload documents section-->
+            <section class="upload counter">
+                <div class="upload-wrapper">
+                    <h1>Upload your documents</h1>
+                    <span><small>(Doc, Docx, Text, PDF, Markdown)</small></span>
+                </div>
+
+                <div class="upload-file-wrapper">
+                    <input type="file" name="file" id="file" class="inputfile" />
+                    <label for="file">Upload a new file</label>
+                </div>  
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="file-name">File name</th>
+                        <th>File size</th>
+                        <th>Number of words</th>
+                        <th>Remove</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>business_operations.docx</td>
+                        <td><data value="kb:78.0">78kb</data></td>
+                        <td><data value="words:842">842</data></td>
+                        <td>
+                            <button class="delete">
+                                <img src="images/icons/delete-bin.svg" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="last-row">
+                        <td>business_financial.docx</td>
+                        <td><data value="kb:26.0">26kb</data></td>
+                        <td><data value="words:2326">2,326</data></td>
+                        <td>
+                            <button class="delete">
+                                <img src="images/icons/delete-bin.svg" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!--Choose languages section-->
+            <section class="lang-select counter">
+                <h1>Choose your languages pairings</h1>
+                <ul>
+                    <li>
+                        <span>from</span>
+                        <label class="language visible-select">
+                            <select>
+                                <option value="">Language</option>
+                                <option value="english">English</option>
+                                <option value="arabic">Arabic</option>
+                                <option value="dutch">Dutch</option>
+                            </select>
+                        </label>                      
+                    </li>
+                    <li>
+                        <span>to</span>
+                        <label class="language visible-select">
+                            <select>
+                                <option value="">Language</option>
+                                <option value="english">English</option>
+                                <option value="arabic">Arabic</option>
+                                <option value="dutch">Dutch</option>
+                            </select>
+                        </label>
+                        <label class="language">
+                            <select>
+                                <option value="">Language</option>
+                                <option value="english">English</option>
+                                <option value="arabic">Arabic</option>
+                                <option value="dutch">Dutch</option>
+                            </select>
+                        </label>
+                        <button class="delete">
+                            <img src="images/icons/delete-bin.svg" alt="">
+                        </button>
+                        <button class="add_btn">
+                            add
+                        </button>                      
+                    </li>
+                </ul>                                
+            </section>
+
+            <div class="section-wrapper">
+                <!--Selecting tone section-->
+                <section class="select-tone counter">
+                    <h1>Select your desired tone</h1>
+                    <div class="select-tone-wraper">
+                        <input id="friendly" type="radio" name="select-tone" value="friendly" />
+                        <label class="select-tone-item friendly" for="friendly">Friendly / Casual</label>
+                        <input checked id="corporate" type="radio" name="select-tone" value="corporate"/>
+                        <label class="select-tone-item corporate" for="corporate">Corporate / Pro</label>
+                        <input id="media" type="radio" name="select-tone" value="media"/>
+                        <label class="select-tone-item media" for="media">Media / Formal</label>
+                    </div>
+
+                </section>
+
+                <!--Urgent range section-->
+                <section class="urgent counter">
+                    <h1>Tell us how urgent this job is</h1>
+                    <div class="time-line-wrapper">
+                        <input class="one" name=time type="range" min="0" max="2" step="1.0" value="1">
+                        <div class="rangeLabel-wrapper">
+                            <span class="rangeLabel">I got time</span>
+                            <span class="rangeLabel selected">Average</span>
+                            <span class="rangeLabel">Yesterday</span>
+                        </div>
+                        
+                    </div>
+                    <div class="timeline-info-text">
+                        <h2> Timeline info</h2>
+                        <p class="timeline_small-text"><small>With an&nbsp;<b>AVERAGE</b>&nbsp;timeline set up, our expert translator can take a reasonable amount of time perfecting your translation</small></p>
+                    </div>
+                </section>
+            </div>
+
+            <!--Sign up and choose a payment method section-->
+            <section class="pay-method counter">
+                <h1>Sign up and choose a payment method</h1>
+                <p>Already have an account with us? <a href="#">Sign in</a></p>
+                <div class="wrapper">
+                    <div class="input-wrapper">
+                        <label for="name">full name</label>
+                        <input id="name" name="name" type="text" placeholder="Enter your full name">
+                        <label for="email">email adress</label>
+                        <input id="email" name="email" type="email" placeholder="Enter your email">
+                                               
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="hide">Hide this field!!!</label>
+                        <input id="text" type="text" ><label for="text"></label>
+                        <label for="pass">choose a password</label>       
+                        <input id="pass" name="pass" type="password" placeholder="Enter password">
+                    </div>                    
+                </div>
+
+                <div class="payment_block-wrapper">
+                    <input checked="checked" id="visa_master" type="radio" name="pay_method" value="visa" />
+                    <label class="payment visa_master" for="visa_master"></label>
+                    <input id="paypal" type="radio" name="pay_method" value="paypal"/>
+                    <label class="payment paypal" for="paypal"></label>
+                    <input id="amazon" type="radio" name="pay_method" value="amazon"/>
+                    <label class="payment amazon" for="amazon"></label>
+                </div>
+
+                <figure class='card-wrapper'></figure>
+                <div class="card-values wrapper">
+                    <ul>
+                        <li><label for="card-number">card number</label></li>
+                        <li><input id="card-number" name="number" type="text" placeholder="**** **** **** ****"></li>
+                    </ul>
+                    <ul>
+                        <li> <label for="expiry-date">expiry date</label></li>
+                        <li><input id="expiry-date" name="expiry" type="date" placeholder="MM/YY"></li>
+                    </ul>
+                    <ul>
+                        <li><label for="code-card">code</label></li>
+                        <li><input id="code-card" name="cvc" type="text" placeholder="CVC"></li>
+                    </ul>
+                </div>
+
+                <fieldset class="validator">
+                    <div class="validator-wrapper"></div>
+
+                </fieldset>
+
+                <div class="order-buttons bottom-btn">
+                    <input id="terms" type="checkbox" name="terms-and-cond">
+                    <label for="terms">I agree to the <a href="#">Terms &amp; Conditions</a></label>
+                    <button class="place-order bottom">place order</button>
+                    <button class="print a quote">print a quote</button>
+                </div>
+
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <section class="wrapper heart">
+            <h1>what we do</h1>
+            <em>We provide a full range of language services including content development, document, website and social media accounts translations</em>
+        </section>
+        <section class="wrapper office">
+            <h1>our main office</h1>
+            <ul>
+                <li>Dubai, UAE</li>
+                <li>P.O. Box: 502735</li>
+                <li>Phone: <a href="tel:+971(0)44278128">+971(0)44278128</a></li>
+            </ul>
+        </section>
+        <section class="wrapper social">
+            <h1>connect with us</h1>
+            <ul>
+                <li><a class="facebook" href="#">Facebook</a></li>
+                <li><a class="twitter" href="#">Twitter</a></li>
+                <li><a class="linkedin" href="#">LinkedIn</a></li>
+            </ul>
+        </section>
+        <section class="wrapper image">
+            <a href="#"><img class="logo" src="images/icons/label_footer.png" role="button" alt="company logo"></a>
+        </section>
+    </footer>
+
+
+    <script src="jquery/jquery-2.2.4.min.js"></script>
+    <script src="scripts/jquery.card.js"></script>
+    <!--<script src="semantic_ui/semantic.min.js"></script>-->
+    <script src="scripts/main.js"></script>
+    <!--<script src="semantic_ui/components/accordion.min.js"></script>-->
+</body>
+</html>
